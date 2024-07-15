@@ -3,10 +3,10 @@
   <head><meta charset="utf-8"/>
     <meta name="viewport" content="width=device-width,initial-scale=1"/>
     <meta name="color-scheme" content="light dark"><meta name="viewport" content="width=device-width, initial-scale=1" />
-<link rel="index" title="Index" href="../genindex.html" /><link rel="search" title="Search" href="../search.html" /><link rel="next" title="EconomicImpact Class" href="../EconomicImpact/index.html" /><link rel="prev" title="Introduction" href="../index.html" />
+<link rel="index" title="Index" href="../genindex.html" /><link rel="search" title="Search" href="../search.html" /><link rel="next" title="By program" href="byprogram.html" /><link rel="prev" title="Budgetary Impact" href="index.html" />
 
     <!-- Generated with Sphinx 7.4.2 and Furo 2024.05.06 -->
-        <title>How to contribute - PolicyEngine</title>
+        <title>Overall - PolicyEngine</title>
       <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=80d5e7a1" />
     <link rel="stylesheet" type="text/css" href="../_static/styles/furo.css?v=387cc868" />
     <link rel="stylesheet" type="text/css" href="../_static/togglebutton.css?v=13237357" />
@@ -221,11 +221,11 @@
 </form>
 <div id="searchbox"></div><div class="sidebar-scroll"><div class="sidebar-tree">
   <p class="caption" role="heading"><span class="caption-text">Contributing</span></p>
-<ul class="current">
-<li class="toctree-l1 current current-page"><a class="current reference internal" href="#">How to contribute</a></li>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../contributing/index.html">How to contribute</a></li>
 </ul>
 <p class="caption" role="heading"><span class="caption-text">EconomicImpact</span></p>
-<ul>
+<ul class="current">
 <li class="toctree-l1"><a class="reference internal" href="../EconomicImpact/index.html">EconomicImpact Class</a></li>
 <li class="toctree-l1 has-children"><a class="reference internal" href="../Poverty/index.html">Poverty impact</a><input class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" role="switch" type="checkbox"/><label for="toctree-checkbox-1"><div class="visually-hidden">Toggle navigation of Poverty impact</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
 <li class="toctree-l2 has-children"><a class="reference internal" href="../Poverty/regular/index.html">Regular poverty</a><input class="toctree-checkbox" id="toctree-checkbox-2" name="toctree-checkbox-2" role="switch" type="checkbox"/><label for="toctree-checkbox-2"><div class="visually-hidden">Toggle navigation of Regular poverty</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
@@ -240,9 +240,9 @@
 </li>
 </ul>
 </li>
-<li class="toctree-l1 has-children"><a class="reference internal" href="../Budgetary/index.html">Budgetary Impact</a><input class="toctree-checkbox" id="toctree-checkbox-4" name="toctree-checkbox-4" role="switch" type="checkbox"/><label for="toctree-checkbox-4"><div class="visually-hidden">Toggle navigation of Budgetary Impact</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
-<li class="toctree-l2"><a class="reference internal" href="../Budgetary/overall.html">Overall</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../Budgetary/byprogram.html">By program</a></li>
+<li class="toctree-l1 current has-children"><a class="reference internal" href="index.html">Budgetary Impact</a><input checked="" class="toctree-checkbox" id="toctree-checkbox-4" name="toctree-checkbox-4" role="switch" type="checkbox"/><label for="toctree-checkbox-4"><div class="visually-hidden">Toggle navigation of Budgetary Impact</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul class="current">
+<li class="toctree-l2 current current-page"><a class="current reference internal" href="#">Overall</a></li>
+<li class="toctree-l2"><a class="reference internal" href="byprogram.html">By program</a></li>
 </ul>
 </li>
 </ul>
@@ -265,7 +265,7 @@
         </a>
         <div class="content-icon-container">
           <div class="view-this-page">
-  <a class="muted-link" href="../_sources/contributing/index.md" title="View this page">
+  <a class="muted-link" href="../_sources/Budgetary/overall.md" title="View this page">
     <svg><use href="#svg-eye"></use></svg>
     <span class="visually-hidden">View this page</span>
   </a>
@@ -285,37 +285,106 @@
           </label>
         </div>
         <article role="main" id="furo-main-content">
-          <section class="tex2jax_ignore mathjax_ignore" id="how-to-contribute">
-<h1>How to contribute<a class="headerlink" href="#how-to-contribute" title="Link to this heading">¶</a></h1>
-<p>Any and all contributions are welcome to this project. You can help by:</p>
+          <section class="tex2jax_ignore mathjax_ignore" id="overall">
+<h1>Overall<a class="headerlink" href="#overall" title="Link to this heading">¶</a></h1>
+<section id="overview">
+<h2>Overview<a class="headerlink" href="#overview" title="Link to this heading">¶</a></h2>
+<p>The Budgetary Impact Overall metrics provide a high-level summary of how a policy reform affects government finances. These metrics are part of the <code class="docutils literal notranslate"><span class="pre">EconomicImpact</span></code> class and offer insights into the overall budgetary impact, changes in benefit spending, and changes in tax revenue.</p>
+</section>
+<section id="available-metrics">
+<h2>Available Metrics<a class="headerlink" href="#available-metrics" title="Link to this heading">¶</a></h2>
+<ol class="arabic simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">budgetary/overall/budgetary_impact</span></code>: Overall budgetary impact of the reform</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">budgetary/overall/benefit_spending_impact</span></code>: Impact on total benefit spending</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">budgetary/overall/tax_revenue_impact</span></code>: Impact on total tax revenue</p></li>
+</ol>
+</section>
+<section id="metric-structure">
+<h2>Metric Structure<a class="headerlink" href="#metric-structure" title="Link to this heading">¶</a></h2>
+<p>Each metric returns a dictionary with specific keys:</p>
+<section id="budgetary-impact">
+<h3>Budgetary Impact<a class="headerlink" href="#budgetary-impact" title="Link to this heading">¶</a></h3>
 <ul class="simple">
-<li><p>Filing issues. Tell us about bugs you’ve found, or features you’d like to see.</p></li>
-<li><p>Fixing issues. File a pull request to fix an issue you or someone else has filed.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">budgetary_impact</span></code>: The overall budgetary impact (in GBP)</p></li>
 </ul>
-<p>If you file an issue or a pull request, one of the maintainers (primarily <a class="reference external" href="https://github.com/nikhilwoodruff">&#64;nikhilwoodruff</a>) will respond to it within at least a week. If you don’t hear back, feel free to ping us on the issue or pull request.</p>
-<section id="changelog-entries">
-<h2>Changelog Entries<a class="headerlink" href="#changelog-entries" title="Link to this heading">¶</a></h2>
-<p>Before you send out a pull request, make sure to add a description of your changes to <a class="reference internal" href="#../../changelog_entry.yaml"><span class="xref myst">changelog_entry.yaml</span></a>.
-For example,</p>
-<div class="highlight-yaml notranslate"><div class="highlight"><pre><span></span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">bump</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">patch</span>
-<span class="w">  </span><span class="nt">changes</span><span class="p">:</span>
-<span class="w">    </span><span class="nt">fixed</span><span class="p">:</span>
-<span class="w">    </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">Fixed a bug causing Windows tests to fail.</span>
+</section>
+<section id="benefit-spending-impact">
+<h3>Benefit Spending Impact<a class="headerlink" href="#benefit-spending-impact" title="Link to this heading">¶</a></h3>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">baseline_total_benefits</span></code>: Total benefits before the reform (in GBP)</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">reformed</span> <span class="pre">total</span> <span class="pre">benefits</span></code>: Total benefits after the reform (in GBP)</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">benefit_spending_impact</span></code>: The difference in benefit spending (in GBP)</p></li>
+</ul>
+</section>
+<section id="tax-revenue-impact">
+<h3>Tax Revenue Impact<a class="headerlink" href="#tax-revenue-impact" title="Link to this heading">¶</a></h3>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">baseline</span> <span class="pre">total</span> <span class="pre">tax</span></code>: Total tax revenue before the reform (in GBP)</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">reformed</span> <span class="pre">total</span> <span class="pre">tax</span></code>: Total tax revenue after the reform (in GBP)</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">tax_revenue_impact</span></code>: The difference in tax revenue (in GBP)</p></li>
+</ul>
+</section>
+</section>
+<section id="example-usage">
+<h2>Example Usage<a class="headerlink" href="#example-usage" title="Link to this heading">¶</a></h2>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">policyengine</span> <span class="kn">import</span> <span class="n">EconomicImpact</span>
+
+<span class="c1"># Initialize the EconomicImpact class with a reform</span>
+<span class="n">impact</span> <span class="o">=</span> <span class="n">EconomicImpact</span><span class="p">(</span><span class="n">reform</span><span class="o">=</span><span class="p">{</span>
+  <span class="s2">&quot;gov.hmrc.income_tax.rates.uk[0].rate&quot;</span><span class="p">:</span> <span class="p">{</span>
+    <span class="s2">&quot;2024-01-01.2100-12-31&quot;</span><span class="p">:</span> <span class="mf">0.55</span>
+  <span class="p">}</span>
+<span class="p">},</span> <span class="n">country</span><span class="o">=</span><span class="s2">&quot;uk&quot;</span><span class="p">)</span>
+
+<span class="c1"># Calculate overall budgetary impacts</span>
+<span class="n">budgetary_impact</span> <span class="o">=</span> <span class="n">impact</span><span class="o">.</span><span class="n">calculate</span><span class="p">(</span><span class="s2">&quot;budgetary/overall/budgetary_impact&quot;</span><span class="p">)</span>
+<span class="n">benefit_spending_impact</span> <span class="o">=</span> <span class="n">impact</span><span class="o">.</span><span class="n">calculate</span><span class="p">(</span><span class="s2">&quot;budgetary/overall/benefit_spending_impact&quot;</span><span class="p">)</span>
+<span class="n">tax_revenue_impact</span> <span class="o">=</span> <span class="n">impact</span><span class="o">.</span><span class="n">calculate</span><span class="p">(</span><span class="s2">&quot;budgetary/overall/tax_revenue_impact&quot;</span><span class="p">)</span>
+
+<span class="c1"># Print the results</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Budgetary Impact: </span><span class="si">{</span><span class="n">budgetary_impact</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Benefit Spending Impact: </span><span class="si">{</span><span class="n">benefit_spending_impact</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Tax Revenue Impact: </span><span class="si">{</span><span class="n">tax_revenue_impact</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+
 </pre></div>
 </div>
-<p>You can find more examples in <a class="reference internal" href="#../../changelog.yaml"><span class="xref myst">changelog.yaml</span></a>. Note that you do not need to add the date field.
-That field is automatically populated by <code class="docutils literal notranslate"><span class="pre">make</span> <span class="pre">changelog</span></code>. Also, note that <strong>you should not run <code class="docutils literal notranslate"><span class="pre">make</span> <span class="pre">changelog</span></code>
-yourself</strong>, as <a class="reference internal" href="#../../.github/workflows"><span class="xref myst">our GitHub workflows</span></a> will do this for you as part of the build process.</p>
 </section>
-<section id="pull-requests">
-<h2>Pull requests<a class="headerlink" href="#pull-requests" title="Link to this heading">¶</a></h2>
-<p>Each pull request should:</p>
+<section id="output">
+<h2>output<a class="headerlink" href="#output" title="Link to this heading">¶</a></h2>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">Budgetary</span> <span class="n">Impact</span><span class="p">:</span> <span class="p">{</span><span class="s1">&#39;budgetary_impact&#39;</span><span class="p">:</span> <span class="mf">203274712297.14</span><span class="p">}</span>
+<span class="n">Benefit</span> <span class="n">Spending</span> <span class="n">Impact</span><span class="p">:</span> <span class="p">{</span><span class="s1">&#39;baseline_total_benefits&#39;</span><span class="p">:</span> <span class="mf">247160184562.67</span><span class="p">,</span> <span class="s1">&#39;reformed total benefits&#39;</span><span class="p">:</span> <span class="mf">249032006583.15</span><span class="p">,</span> <span class="s1">&#39;benefit spending impact&#39;</span><span class="p">:</span> <span class="mf">1871822020.49</span><span class="p">}</span>
+<span class="n">Tax</span> <span class="n">Revenue</span> <span class="n">Impact</span><span class="p">:</span> <span class="p">{</span><span class="s1">&#39;baseline total tax&#39;</span><span class="p">:</span> <span class="mf">447861864968.89</span><span class="p">,</span> <span class="s1">&#39;reformed total tax&#39;</span><span class="p">:</span> <span class="mf">653008399286.52</span><span class="p">,</span> <span class="s1">&#39;tax revenue impact&#39;</span><span class="p">:</span> <span class="mf">205146534317.63</span><span class="p">}</span>
+</pre></div>
+</div>
+</section>
+<section id="interpretation">
+<h2>Interpretation<a class="headerlink" href="#interpretation" title="Link to this heading">¶</a></h2>
+<p>In this example:</p>
+<ol class="arabic simple">
+<li><p>Overall Budgetary Impact:</p></li>
+</ol>
 <ul class="simple">
-<li><p>Close an issue. If there isn’t an issue that the pull request completely addresses, please file one.</p></li>
-<li><p>Have a description that makes sense to a layperson. If you’re fixing a bug, describe what the bug is and how you fixed it. If you’re adding a feature, describe what the feature is and why you added it.</p></li>
-<li><p>Have tests. If you’re fixing a bug, write a test that fails without your fix and passes with it. If you’re adding a feature, write tests that cover the feature. Sometimes this isn’t necessary (for example, documentation changes), but if in doubt, err on the side of including tests.</p></li>
-<li><p>Pass all GitHub actions. If you’re not sure why a GitHub action is failing, feel free to ask for help in the issue or pull request.</p></li>
+<li><p>The reform results in a positive budgetary impact of approximately £203.27 billion. This represents the net fiscal effect of the reform, combining changes in both tax revenue and benefit spending.</p></li>
 </ul>
+<ol class="arabic simple" start="2">
+<li><p>Benefit Spending Impact:</p></li>
+</ol>
+<ul class="simple">
+<li><p>Baseline total benefits: £247.16 billion</p></li>
+<li><p>Reformed total benefits: £249.03 billion</p></li>
+<li><p>The reform increases benefit spending by £1.87 billion</p></li>
+</ul>
+<ol class="arabic simple" start="3">
+<li><p>Tax Revenue Impact:</p></li>
+</ol>
+<ul class="simple">
+<li><p>Baseline total tax: £447.86 billion</p></li>
+<li><p>Reformed total tax: £653.01 billion</p></li>
+<li><p>The reform increases tax revenue by £205.15 billion</p></li>
+</ul>
+<p>The reform significantly increases tax revenue (by £205.15 billion) while slightly increasing benefit spending (by £1.87 billion). The net effect is a substantial positive budgetary impact of £203.27 billion.
+These metrics provide a comprehensive overview of the fiscal implications of the proposed reform. They can help policymakers understand the overall financial impact on government finances, including changes in both revenue and expenditure.
+Note: All monetary values are in GBP (British Pounds).</p>
 </section>
 </section>
 
@@ -332,7 +401,7 @@ yourself</strong>, as <a class="reference internal" href="#../../.github/workflo
         },
         kernelOptions: {
             name: "python3",
-            path: "./contributing"
+            path: "./Budgetary"
         },
         predefinedOutput: true
     }
@@ -343,23 +412,23 @@ yourself</strong>, as <a class="reference internal" href="#../../.github/workflo
       <footer>
         
         <div class="related-pages">
-          <a class="next-page" href="../EconomicImpact/index.html">
+          <a class="next-page" href="byprogram.html">
               <div class="page-info">
                 <div class="context">
                   <span>Next</span>
                 </div>
-                <div class="title">EconomicImpact Class</div>
+                <div class="title">By program</div>
               </div>
               <svg class="furo-related-icon"><use href="#svg-arrow-right"></use></svg>
             </a>
-          <a class="prev-page" href="../index.html">
+          <a class="prev-page" href="index.html">
               <svg class="furo-related-icon"><use href="#svg-arrow-right"></use></svg>
               <div class="page-info">
                 <div class="context">
                   <span>Previous</span>
                 </div>
                 
-                <div class="title">Home</div>
+                <div class="title">Budgetary Impact</div>
                 
               </div>
             </a>
@@ -393,9 +462,18 @@ yourself</strong>, as <a class="reference internal" href="#../../.github/workflo
         <div class="toc-tree-container">
           <div class="toc-tree">
             <ul>
-<li><a class="reference internal" href="#">How to contribute</a><ul>
-<li><a class="reference internal" href="#changelog-entries">Changelog Entries</a></li>
-<li><a class="reference internal" href="#pull-requests">Pull requests</a></li>
+<li><a class="reference internal" href="#">Overall</a><ul>
+<li><a class="reference internal" href="#overview">Overview</a></li>
+<li><a class="reference internal" href="#available-metrics">Available Metrics</a></li>
+<li><a class="reference internal" href="#metric-structure">Metric Structure</a><ul>
+<li><a class="reference internal" href="#budgetary-impact">Budgetary Impact</a></li>
+<li><a class="reference internal" href="#benefit-spending-impact">Benefit Spending Impact</a></li>
+<li><a class="reference internal" href="#tax-revenue-impact">Tax Revenue Impact</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#example-usage">Example Usage</a></li>
+<li><a class="reference internal" href="#output">output</a></li>
+<li><a class="reference internal" href="#interpretation">Interpretation</a></li>
 </ul>
 </li>
 </ul>
